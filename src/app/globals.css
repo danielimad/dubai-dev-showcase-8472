@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    font-family: 'Inter', 'Tajawal', sans-serif;
+  }
+}
+
+@layer components {
+  .gradient-text {
+    @apply bg-gradient-to-r from-dubai-gold to-desert bg-clip-text text-transparent;
+  }
+  
+  .btn-primary {
+    @apply bg-gradient-to-r from-dubai-gold to-desert text-black px-8 py-3 rounded-lg font-medium hover:shadow-lg transition-all duration-300 hover:scale-105;
+  }
+  
+  .btn-secondary {
+    @apply border-2 border-dubai-gold text-dubai-gold px-8 py-3 rounded-lg font-medium hover:bg-dubai-gold hover:text-black transition-all duration-300;
+  }
+}
